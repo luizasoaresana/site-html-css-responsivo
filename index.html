@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=devi-width, initial-scale=1.0">
 <title>Site da alimentação e cardápio escolar</title>
 <link rel="stylesheet" href="reset.css">
+<link rel="stylesheet"href="https://unpkg.com/npm/swiper@8/swiper-bundle.min.css"/>
 <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -28,6 +29,70 @@
     <a href="#"><img src="img/do-utilizador.svg" alt="Meu perfil" class="container__imagem"></a>
 
 </div>
+<header>
+  
+
+
+<section class="banner">
+<h2 class="banner__titulo">Já sabe oque será de lanche hoje?</h2>
+<p class="banner__texto">Encontre aqui oque será de lanche na sua escola!</p>
+<input type="search" class="banner__pesquisa" placeholder="Qual  será o lanche?">
+</section>
+
+<section class="carrossel">
+    <h2 class="carrossel__titulo">Cárdapio da semana</h2>
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+  
+
+
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="img/pagina-do-calendario-de-segunda-feira.svg" alt=" Calendário de segunda-feira "></div>
+      <div class="swiper-slide"><img src="img/pagina-do-calendario-diario-de-terca-feira.svg" alt="Calendário de terça-feira"></div>
+      <div class="swiper-slide"><img src="img/pagina-diaria-do-calendario-de-quarta-feira.svg" alt="Calendário de quarrta-feira"></div>
+      <div class="swiper-slide"><img src="img/simbolo-de-interface-da-pagina-diaria-do-calendario-de-quinta-feira.svg" alt="Calendário de quinta-feira"></div>
+    <div class="swiper-slide"><img src="img/sexta-feira.svg" alt="Calendário de sexta-feira"></div>
+    </div>
+   
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+  </div>
+
+
+  <div class="card">
+    <div class="card__descrição">
+      <div class="descrição">
+        <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+     <h2 class="descrição__titulo-escola">Escola Estadual Projeto Rondon</h2>
+     
+      </div>
+    </div>
+  </div>
+
+  <section class="contato">
+    <h2 class="cntato__titulo"> Fique atento as novidades!</h2>
+<p class="contato__texto">Atualizações de novos lanches, vendas especiais e outros.</p>
+  <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+</section>
+
+</section>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+  spaceBetween: 10,
+  slidesPerView: 3,
+  pagination: {
+    el:'.swiper-pagination',
+    type: 'bullets',
+  },
+});
+</script>
 </body>
 
 
