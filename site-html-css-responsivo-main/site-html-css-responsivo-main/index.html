@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=devi-width, initial-scale=1.0">
+<title>Site da alimentação e cardápio escolar</title>
+<link rel="stylesheet" href="reset.css">
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header class="cabeçalho" >
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+    </label>
+    <ul class="lista-menu">
+    <li class="lista-menu__titulo">Informações</li>
+    <li class="lista-menu__item"><a href="#" class="lista-menu__link">Localização do Cólegio</a></li>
+    <li class="lista-menu__item"><a href="#" class="lista-menu__link">Página do Cólegio</a></li>    
+</ul>
+<img src="img/menu-hamburguer.svg" alt="Localização da escola">
+        </div>
+<div class="container">
+    <a href="#"><img src="img/do-utilizador.svg" alt="Meu perfil" class="container__imagem"></a>
+
+</div>
+<header>
+
+
+<section class="banner">
+<h2 class="banner__titulo">Já sabe oque será de lanche hoje?</h2>
+<p class="banner__texto">Encontre aqui oque será de lanche na sua escola!</p>
+<input type="search" class="banner__pesquisa" placeholder="Qual  será o lanche?">
+</section>
+
+<section class="carrossel">
+    <h2 class="carrossel__titulo">Cárdapio da semana</h2>
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="img/pagina-do-calendario-de-segunda-feira.svg" alt="Calendário de segunda-feira"></div>
+    <div class="swiper-slide"><img src="img/pagina-do-calendario-diario-de-terca-feira.svg" alt="Calendário de terça-feira"></div>
+    <div class="swiper-slide"><img src="img/pagina-diaria-do-calendario-de-quarta-feira.svg" alt="Calendário de quarta-feira"></div>
+    <div class="swiper-slide"><img src="img/simbolo-de-interface-da-pagina-diaria-do-calendario-de-quinta-feira.svg" alt="Calendário de quinta-feira"></div>
+    <div class="swiper-slide"><img src="img/sexta-feira.svg" alt="Calendário de sexta-feira"></div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+  </div>
+
+</section>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+  spaceBetween: 10,
+  slidesPerView: 3,
+});
+</script>
+</body>
+
+
+</html>
